@@ -1,7 +1,7 @@
 var config = require('./config/config.js').default;
-var App = require('./src/app').default;
+var App = require('./lib/app').default;
 var setupDB = require('./db/setupDB').default;
-var setupExpress = require('./src/setupExpress').default;
+var setupExpress = require('./lib/setupExpress').default;
 
 var db = setupDB(config.db);
 var express = setupExpress();

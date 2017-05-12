@@ -13,7 +13,7 @@ var middlewares = require('./middleware/index.js').default;
 app.init(routes, middlewares);
 
 registers.forEach((register)=> {
-  app.inject(register.key, register.value);
+  app.inject(register.name, register.dependency);
 });
 
 app.listen(()=> {
