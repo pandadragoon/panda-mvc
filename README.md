@@ -1,0 +1,1 @@
+Must create a DB_USER and DB_PASSWORD in a .env file in the root of the project.
